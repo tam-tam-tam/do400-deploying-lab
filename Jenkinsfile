@@ -39,7 +39,7 @@ pipeline {
 				sh """
 					oc set image deployment home-automation \
 					home-automation=quay.io/${QUAY_USR}/do400-deploying-lab:build-${BUILD_NUMBER} \
-					-n gnjwlp-deloying-lab-test --record
+					-n gnjwlp-deploying-lab-test --record
 				"""
 			}
 		}
